@@ -24,7 +24,8 @@ CP=cp
 IPC_MSG_CLI_OBJ    = $(IPC_MSG_CLI_OBJ_DIR)/communicate_lib.o	\
 	$(IPC_MSG_CLI_OBJ_DIR)/udp_communicate_driver.o	\
 	$(IPC_MSG_CLI_OBJ_DIR)/cJSON.o	\
-	$(IPC_MSG_CLI_OBJ_DIR)/unix_communicate_driver.o
+	$(IPC_MSG_CLI_OBJ_DIR)/unix_communicate_driver.o \
+	$(IPC_MSG_CLI_OBJ_DIR)/test_demo.o
 
 TARGET_IPC_TEST_OBJ    = $(IPC_MSG_CLI_OBJ_DIR)/msg_client.o
 
