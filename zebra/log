@@ -1,0 +1,27 @@
+make  all-recursive
+make[1]: 正在进入目录 `/home/caiqiang/OSL6200/zebra'
+Making all in lib
+make[2]: 正在进入目录 `/home/caiqiang/OSL6200/zebra/lib'
+make[2]: 没有什么可以做的为 `all'。
+make[2]:正在离开目录 `/home/caiqiang/OSL6200/zebra/lib'
+Making all in zebra
+make[2]: 正在进入目录 `/home/caiqiang/OSL6200/zebra/zebra'
+Making all in product
+make[3]: 正在进入目录 `/home/caiqiang/OSL6200/zebra/zebra/product'
+Making all in common
+make[4]: 正在进入目录 `/home/caiqiang/OSL6200/zebra/zebra/product/common'
+make[4]: 没有什么可以做的为 `all'。
+make[4]:正在离开目录 `/home/caiqiang/OSL6200/zebra/zebra/product/common'
+Making all in OSL6200
+make[4]: 正在进入目录 `/home/caiqiang/OSL6200/zebra/zebra/product/OSL6200'
+make[4]: 没有什么可以做的为 `all'。
+make[4]:正在离开目录 `/home/caiqiang/OSL6200/zebra/zebra/product/OSL6200'
+make[4]: 正在进入目录 `/home/caiqiang/OSL6200/zebra/zebra/product'
+make[4]: 没有什么可以做的为 `all-am'。
+make[4]:正在离开目录 `/home/caiqiang/OSL6200/zebra/zebra/product'
+make[3]:正在离开目录 `/home/caiqiang/OSL6200/zebra/zebra/product'
+make[3]: 正在进入目录 `/home/caiqiang/OSL6200/zebra/zebra'
+/opt/at91/Buildroot/buildroot-2011.05/output/host/usr/bin/arm-unknown-linux-uclibcgnueabi-gcc  -g -O2 -Wall   -o zebra zserv.o main.o interface.o connected.o ioctl.o zebra_rib.o redistribute.o debug.o rtadv.o zebra_snmp.o zebra_vty.o irdp_main.o irdp_interface.o irdp_packet.o ./product/common/libprodcommon.a product/OSL6200/libOSL6200.a ../lib/libzebra.a ipforward_proc.o if_netlink.o if_proc.o rt_netlink.o rtread_netlink.o    -lophy_ipcmsg -lm -lcrypt 
+make[3]:正在离开目录 `/home/caiqiang/OSL6200/zebra/zebra'
+make[2]:正在离开目录 `/home/caiqiang/OSL6200/zebra/zebra'
+make[1]:正在离开目录 `/home/caiqiang/OSL6200/zebra'

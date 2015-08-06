@@ -1,0 +1,274 @@
+bgp_aspath.c: In function ‘aspath_make_str_count’:
+bgp_aspath.c:148: warning: pointer targets in return differ in signedness
+bgp_aspath.c:236: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness
+/usr/include/bits/stdio2.h:32: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+bgp_aspath.c:251: warning: pointer targets in return differ in signedness
+bgp_attr.c: In function ‘bgp_attr_community’:
+bgp_attr.c:860: warning: pointer targets in passing argument 1 of ‘community_parse’ differ in signedness
+../bgpd/bgp_community.h:54: note: expected ‘char *’ but argument is of type ‘u_char *’
+bgp_attr.c: In function ‘bgp_attr_cluster_list’:
+bgp_attr.c:907: warning: pointer targets in passing argument 1 of ‘cluster_parse’ differ in signedness
+bgp_attr.c:87: note: expected ‘caddr_t’ but argument is of type ‘u_char *’
+bgp_attr.c: In function ‘bgp_attr_ext_communities’:
+bgp_attr.c:1060: warning: pointer targets in passing argument 1 of ‘ecommunity_parse’ differ in signedness
+../bgpd/bgp_ecommunity.h:87: note: expected ‘char *’ but argument is of type ‘u_char *’
+bgp_route.c: In function ‘bgp_maximum_prefix_overflow’:
+bgp_route.c:936: warning: pointer targets in passing argument 4 of ‘bgp_notify_send_with_data’ differ in signedness
+../bgpd/bgp_packet.h:44: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_route.c: In function ‘bgp_static_set_vpnv4’:
+bgp_route.c:2309: warning: pointer targets in passing argument 1 of ‘str2prefix_rd’ differ in signedness
+../bgpd/bgp_mplsvpn.h:43: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_route.c:2316: warning: pointer targets in passing argument 1 of ‘str2tag’ differ in signedness
+../bgpd/bgp_mplsvpn.h:44: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_route.c: In function ‘bgp_static_unset_vpnv4’:
+bgp_route.c:2378: warning: pointer targets in passing argument 1 of ‘str2prefix_rd’ differ in signedness
+../bgpd/bgp_mplsvpn.h:43: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_route.c:2385: warning: pointer targets in passing argument 1 of ‘str2tag’ differ in signedness
+../bgpd/bgp_mplsvpn.h:44: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_route.c: In function ‘show_ip_bgp_vpnv4_rd_route’:
+bgp_route.c:5247: warning: pointer targets in passing argument 1 of ‘str2prefix_rd’ differ in signedness
+../bgpd/bgp_mplsvpn.h:43: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_route.c: In function ‘show_ip_bgp_vpnv4_rd_prefix’:
+bgp_route.c:5311: warning: pointer targets in passing argument 1 of ‘str2prefix_rd’ differ in signedness
+../bgpd/bgp_mplsvpn.h:43: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_route.c: In function ‘bgp_show_regexp’:
+bgp_route.c:5511: warning: pointer targets in passing argument 2 of ‘buffer_putstr’ differ in signedness
+../lib/buffer.h:70: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_route.c: In function ‘bgp_show_community’:
+bgp_route.c:6094: warning: pointer targets in passing argument 2 of ‘buffer_putstr’ differ in signedness
+../lib/buffer.h:70: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_zebra.c: In function ‘bgp_if_update_all’:
+bgp_zebra.c:92: warning: operation on ‘node’ may be undefined
+bgp_open.c: In function ‘bgp_capability_vty_out’:
+bgp_open.c:55: warning: pointer targets in assignment differ in signedness
+bgp_routemap.c: In function ‘set_community’:
+bgp_routemap.c:2915: warning: pointer targets in passing argument 2 of ‘buffer_putstr’ differ in signedness
+../lib/buffer.h:70: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_routemap.c:2920: warning: pointer targets in passing argument 2 of ‘buffer_putstr’ differ in signedness
+../lib/buffer.h:70: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_routemap.c:2926: warning: pointer targets in passing argument 2 of ‘buffer_putstr’ differ in signedness
+../lib/buffer.h:70: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_routemap.c:2932: warning: pointer targets in passing argument 2 of ‘buffer_putstr’ differ in signedness
+../lib/buffer.h:70: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_routemap.c:2935: warning: pointer targets in passing argument 2 of ‘buffer_putstr’ differ in signedness
+../lib/buffer.h:70: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_packet.c: In function ‘bgp_connect_check’:
+bgp_packet.c:137: warning: pointer targets in passing argument 5 of ‘getsockopt’ differ in signedness
+/usr/include/sys/socket.h:190: note: expected ‘socklen_t * __restrict__’ but argument is of type ‘int *’
+bgp_packet.c: In function ‘bgp_update_packet’:
+bgp_packet.c:180: warning: dereferencing type-punned pointer will break strict-aliasing rules
+bgp_packet.c:210: warning: pointer targets in passing argument 10 of ‘bgp_packet_attribute’ differ in signedness
+../bgpd/bgp_attr.h:113: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_packet.c: In function ‘bgp_withdraw_packet’:
+bgp_packet.c:307: warning: dereferencing type-punned pointer will break strict-aliasing rules
+bgp_packet.c: In function ‘bgp_write_packet’:
+bgp_packet.c:531: warning: dereferencing type-punned pointer will break strict-aliasing rules
+bgp_packet.c:543: warning: dereferencing type-punned pointer will break strict-aliasing rules
+bgp_packet.c: In function ‘bgp_write_proceed’:
+bgp_packet.c:594: warning: dereferencing type-punned pointer will break strict-aliasing rules
+bgp_packet.c:599: warning: dereferencing type-punned pointer will break strict-aliasing rules
+bgp_packet.c: In function ‘bgp_write_notify’:
+bgp_packet.c:725: warning: pointer targets in passing argument 2 of ‘writen’ differ in signedness
+../lib/network.h:27: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+bgp_packet.c: In function ‘bgp_open_receive’:
+bgp_packet.c:1217: warning: pointer targets in passing argument 4 of ‘bgp_notify_send_with_data’ differ in signedness
+bgp_packet.c:840: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_packet.c:1227: warning: pointer targets in passing argument 4 of ‘bgp_notify_send_with_data’ differ in signedness
+bgp_packet.c:840: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_packet.c:1311: warning: pointer targets in passing argument 4 of ‘bgp_notify_send_with_data’ differ in signedness
+bgp_packet.c:840: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_packet.c:1327: warning: pointer targets in passing argument 4 of ‘bgp_notify_send_with_data’ differ in signedness
+bgp_packet.c:840: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_packet.c:1340: warning: pointer targets in passing argument 4 of ‘bgp_notify_send_with_data’ differ in signedness
+bgp_packet.c:840: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_packet.c: In function ‘bgp_read’:
+bgp_packet.c:2327: warning: pointer targets in passing argument 4 of ‘bgp_notify_send_with_data’ differ in signedness
+bgp_packet.c:840: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_filter.c: In function ‘ip_as_path’:
+bgp_filter.c:474: warning: pointer targets in passing argument 2 of ‘buffer_putstr’ differ in signedness
+../lib/buffer.h:70: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_filter.c: In function ‘no_ip_as_path’:
+bgp_filter.c:556: warning: pointer targets in passing argument 2 of ‘buffer_putstr’ differ in signedness
+../lib/buffer.h:70: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_ecommunity.c: In function ‘ecommunity_parse’:
+bgp_ecommunity.c:134: warning: pointer targets in assignment differ in signedness
+bgp_ecommunity.c: In function ‘ecommunity_ecom2str’:
+bgp_ecommunity.c:612: warning: pointer targets in return differ in signedness
+bgp_ecommunity.c:643: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness
+/usr/include/bits/stdio2.h:32: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+bgp_ecommunity.c:683: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness
+/usr/include/bits/stdio2.h:32: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+bgp_ecommunity.c:690: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness
+/usr/include/bits/stdio2.h:32: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+bgp_ecommunity.c:708: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness
+/usr/include/bits/stdio2.h:32: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+bgp_ecommunity.c:720: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness
+/usr/include/bits/stdio2.h:32: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+bgp_ecommunity.c:725: warning: pointer targets in return differ in signedness
+bgp_mplsvpn.c: In function ‘str2prefix_rd’:
+bgp_mplsvpn.c:197: warning: pointer targets in passing argument 1 of ‘__builtin_strchr’ differ in signedness
+bgp_mplsvpn.c:197: note: expected ‘const char *’ but argument is of type ‘u_char *’
+bgp_mplsvpn.c:197: warning: pointer targets in assignment differ in signedness
+bgp_mplsvpn.c:201: warning: pointer targets in passing argument 1 of ‘all_digit’ differ in signedness
+../lib/prefix.h:158: note: expected ‘char *’ but argument is of type ‘u_char *’
+bgp_mplsvpn.c:208: warning: pointer targets in passing argument 1 of ‘__builtin_strchr’ differ in signedness
+bgp_mplsvpn.c:208: note: expected ‘const char *’ but argument is of type ‘u_char *’
+bgp_mplsvpn.c:208: warning: pointer targets in assignment differ in signedness
+bgp_mplsvpn.c:212: warning: pointer targets in passing argument 1 of ‘all_digit’ differ in signedness
+../lib/prefix.h:158: note: expected ‘char *’ but argument is of type ‘u_char *’
+bgp_mplsvpn.c:218: warning: pointer targets in passing argument 1 of ‘atoi’ differ in signedness
+/usr/include/stdlib.h:284: note: expected ‘const char *’ but argument is of type ‘u_char *’
+bgp_mplsvpn.c:219: warning: pointer targets in passing argument 1 of ‘atol’ differ in signedness
+/usr/include/stdlib.h:289: note: expected ‘const char *’ but argument is of type ‘u_char *’
+bgp_mplsvpn.c:223: warning: pointer targets in passing argument 1 of ‘inet_aton’ differ in signedness
+/usr/include/arpa/inet.h:74: note: expected ‘const char *’ but argument is of type ‘u_char *’
+bgp_mplsvpn.c:231: warning: pointer targets in passing argument 1 of ‘atol’ differ in signedness
+/usr/include/stdlib.h:289: note: expected ‘const char *’ but argument is of type ‘u_char *’
+bgp_mplsvpn.c: In function ‘str2tag’:
+bgp_mplsvpn.c:243: warning: pointer targets in passing argument 1 of ‘atol’ differ in signedness
+/usr/include/stdlib.h:289: note: expected ‘const char *’ but argument is of type ‘u_char *’
+bgp_mplsvpn.c: In function ‘show_ip_bgp_vpnv4_rd’:
+bgp_mplsvpn.c:525: warning: pointer targets in passing argument 1 of ‘str2prefix_rd’ differ in signedness
+bgp_mplsvpn.c:183: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_mplsvpn.c: In function ‘show_ip_bgp_vpnv4_rd_tags’:
+bgp_mplsvpn.c:561: warning: pointer targets in passing argument 1 of ‘str2prefix_rd’ differ in signedness
+bgp_mplsvpn.c:183: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_mplsvpn.c: In function ‘show_ip_bgp_vpnv4_rd_neighbor_routes’:
+bgp_mplsvpn.c:620: warning: pointer targets in passing argument 1 of ‘str2prefix_rd’ differ in signedness
+bgp_mplsvpn.c:183: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_mplsvpn.c: In function ‘show_ip_bgp_vpnv4_rd_neighbor_advertised_routes’:
+bgp_mplsvpn.c:707: warning: pointer targets in passing argument 1 of ‘str2prefix_rd’ differ in signedness
+bgp_mplsvpn.c:183: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_nexthop.c: In function ‘zlookup_query’:
+bgp_nexthop.c:917: warning: pointer targets in passing argument 2 of ‘writen’ differ in signedness
+../lib/network.h:27: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+bgp_nexthop.c: In function ‘zlookup_query_ipv6’:
+bgp_nexthop.c:1017: warning: pointer targets in passing argument 2 of ‘writen’ differ in signedness
+../lib/network.h:27: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+bgp_nexthop.c: In function ‘bgp_import_check’:
+bgp_nexthop.c:1068: warning: pointer targets in passing argument 2 of ‘writen’ differ in signedness
+../lib/network.h:27: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+bgp_damp.c: In function ‘bgp_config_write_damp’:
+bgp_damp.c:529: warning: the address of ‘bgp_damp_cfg’ will always evaluate as ‘true’
+bgp_vty.c: In function ‘show_ip_bgp_vpnv4_rd_summary’:
+bgp_vty.c:6289: warning: pointer targets in passing argument 1 of ‘str2prefix_rd’ differ in signedness
+../bgpd/bgp_mplsvpn.h:43: note: expected ‘u_char *’ but argument is of type ‘char *’
+bgp_main.c: In function ‘main’:
+bgp_main.c:267: warning: ignoring return value of ‘daemon’, declared with attribute warn_unused_result
+ripd.c: In function ‘rip_auth_md5’:
+ripd.c:849: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+ripd.c: In function ‘rip_auth_md5_set’:
+ripd.c:957: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+ripd.c: In function ‘rip_read’:
+ripd.c:1513: warning: pointer targets in passing argument 6 of ‘recvfrom’ differ in signedness
+/usr/include/bits/socket2.h:65: note: expected ‘socklen_t * __restrict__’ but argument is of type ‘int *’
+ripd.c: In function ‘rip_write_rte’:
+ripd.c:1846: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+ripd.c:1868: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘unsigned char *’
+ripd.c: In function ‘rip_output_process’:
+ripd.c:2087: warning: pointer targets in passing argument 1 of ‘rip_send_packet’ differ in signedness
+ripd.c:1176: note: expected ‘caddr_t’ but argument is of type ‘unsigned char *’
+ripd.c:2103: warning: pointer targets in passing argument 1 of ‘rip_send_packet’ differ in signedness
+ripd.c:1176: note: expected ‘caddr_t’ but argument is of type ‘unsigned char *’
+ripd.c: In function ‘show_ip_protocols_rip’:
+ripd.c:3165: warning: operation on ‘node’ may be undefined
+rip_main.c: In function ‘main’:
+rip_main.c:256: warning: ignoring return value of ‘daemon’, declared with attribute warn_unused_result
+ripngd.c: In function ‘ripng_recv_packet’:
+ripngd.c:282: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ripngd.c: In function ‘ripng_write_rte’:
+ripngd.c:1259: warning: pointer targets in passing argument 2 of ‘stream_write’ differ in signedness
+../lib/stream.h:98: note: expected ‘u_char *’ but argument is of type ‘char *’
+ripngd.c: In function ‘ripng_output_process’:
+ripngd.c:1437: warning: pointer targets in passing argument 1 of ‘ripng_send_packet’ differ in signedness
+ripngd.c:167: note: expected ‘caddr_t’ but argument is of type ‘unsigned char *’
+ripngd.c:1510: warning: pointer targets in passing argument 1 of ‘ripng_send_packet’ differ in signedness
+ripngd.c:167: note: expected ‘caddr_t’ but argument is of type ‘unsigned char *’
+ripngd.c:1526: warning: pointer targets in passing argument 1 of ‘ripng_send_packet’ differ in signedness
+ripngd.c:167: note: expected ‘caddr_t’ but argument is of type ‘unsigned char *’
+ripng_main.c: In function ‘main’:
+ripng_main.c:237: warning: ignoring return value of ‘daemon’, declared with attribute warn_unused_result
+ospf_zebra.c: In function ‘zebra_interface_if_lookup’:
+ospf_zebra.c:144: warning: pointer targets in passing argument 1 of ‘if_lookup_by_name’ differ in signedness
+../lib/if.h:185: note: expected ‘char *’ but argument is of type ‘u_char *’
+ospf_zebra.c: In function ‘ospf_zebra_add’:
+ospf_zebra.c:390: warning: pointer targets in passing argument 2 of ‘writen’ differ in signedness
+../lib/network.h:27: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+ospf_dump.c: In function ‘ospf_header_dump’:
+ospf_dump.c:653: warning: pointer targets in passing argument 2 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘const char * __restrict__’ but argument is of type ‘u_char *’
+ospf_packet.c: In function ‘ospf_make_md5_digest’:
+ospf_packet.c:350: warning: pointer targets in assignment differ in signedness
+ospf_lsa.c: In function ‘ospf_lsa_checksum’:
+ospf_lsa.c:189: warning: pointer targets in assignment differ in signedness
+ospf_lsa.c: In function ‘router_lsa_link_set’:
+ospf_lsa.c:643: warning: operation on ‘node’ may be undefined
+ospf_lsa.c: In function ‘ospf_check_nbr_status’:
+ospf_lsa.c:2422: warning: operation on ‘node’ may be undefined
+ospf_spf.c: In function ‘ospf_spf_calculate_timer’:
+ospf_spf.c:1027: warning: operation on ‘node’ may be undefined
+ospf_ase.c: In function ‘ospf_ase_external_lsas_finish’:
+ospf_ase.c:740: warning: operation on ‘node’ may be undefined
+ospf_abr.c: In function ‘set_metric’:
+ospf_abr.c:474: warning: pointer targets in assignment differ in signedness
+ospf_vty.c: In function ‘ospf_vl_set_security’:
+ospf_vty.c:730: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+ospf_vty.c:744: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+ospf_vty.c: In function ‘ip_ospf_authentication_key’:
+ospf_vty.c:4148: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+ospf_vty.c: In function ‘ip_ospf_message_digest_key’:
+ospf_vty.c:4273: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+ospf_vty.c: In function ‘config_write_network_area’:
+ospf_vty.c:6902: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+ospf_vty.c:6905: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness
+/usr/include/bits/stdio2.h:32: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+ospf_vty.c: In function ‘config_write_ospf_area’:
+ospf_vty.c:6928: warning: pointer targets in passing argument 1 of ‘area_id2str’ differ in signedness
+ospf_vty.c:6682: note: expected ‘char *’ but argument is of type ‘u_char *’
+ospf_vty.c: In function ‘config_write_virtual_link’:
+ospf_vty.c:7051: warning: pointer targets in passing argument 1 of ‘strncpy’ differ in signedness
+/usr/include/bits/string3.h:120: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+ospf_vty.c:7054: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness
+/usr/include/bits/stdio2.h:32: note: expected ‘char * __restrict__’ but argument is of type ‘u_char *’
+ospf_vty.c: In function ‘no_ospf_default_information_originate’:
+ospf_vty.c:6012: warning: ‘nexthop.s_addr’ is used uninitialized in this function
+ospf_main.c: In function ‘main’:
+ospf_main.c:277: warning: ignoring return value of ‘daemon’, declared with attribute warn_unused_result
+ospf6_lsa.c: In function ‘ospf6_lsa_handler_name’:
+ospf6_lsa.c:720: warning: comparison with string literal results in unspecified behavior
+ospf6_lsa.c: In function ‘no_debug_ospf6_lsa_type’:
+ospf6_lsa.c:858: warning: comparison with string literal results in unspecified behavior
+ospf6_top.c: In function ‘ospf6_top_brouter_hook_add’:
+ospf6_top.c:99: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_top.c: In function ‘ospf6_top_brouter_hook_remove’:
+ospf6_top.c:107: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_route.c: In function ‘ospf6_linkstate_show’:
+ospf6_route.c:1024: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_route.c: In function ‘ospf6_brouter_show’:
+ospf6_route.c:1161: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_intra.c: In function ‘ospf6_intra_brouter_calculation’:
+ospf6_intra.c:1290: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_intra.c:1322: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_spf.c: In function ‘ospf6_vertex_id_cmp’:
+ospf6_spf.c:63: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_spf.c:64: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_asbr.c: In function ‘ospf6_asbr_lsentry_add’:
+ospf6_asbr.c:321: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_asbr.c: In function ‘ospf6_asbr_lsentry_remove’:
+ospf6_asbr.c:351: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_abr.c: In function ‘ospf6_abr_originate_summary_to_area’:
+ospf6_abr.c:174: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_abr.c:367: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_abr.c:388: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_abr.c:442: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ospf6_main.c: In function ‘main’:
+ospf6_main.c:263: warning: ignoring return value of ‘daemon’, declared with attribute warn_unused_result
